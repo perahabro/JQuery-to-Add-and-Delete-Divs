@@ -1,0 +1,68 @@
+<!Doctype html>
+<html> 
+  <head>
+  <style>
+  body
+{
+    font-family: Arial;
+    font-size : 14pt;
+    padding: 10pt;
+    color : Green
+}
+
+.highlight
+{
+    font-size: 18pt;
+    font-weight:Bold;
+    color: Blue;
+}
+
+
+</style>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> 
+  </script>
+
+  <script>
+  $(document).ready(function() {
+    var dvjQuery = null;
+    $('#btnDetach').attr('disabled','disabled');
+    
+    $("#dvjQuery").hover(function() {
+        $(this).addClass('highlight');
+    }, function() {
+        $(this).removeClass('highlight');
+    });
+
+    $('#btnEmpty').click(function() {
+        dvjQuery = $("#dvjQuery").empty();
+        $(this).attr('disabled','disabled');
+        $('#btnEmpty').removeAttr('disabled');
+    });
+     
+    $('#btnDetach').click(function() {
+        $("#dvParent").html(dvjQuery);
+         $(this).attr('disabled','disabled');
+        $('#btnAttach').removeAttr('disabled');
+    });
+});
+
+</script>
+
+  </head>
+ <body>
+ 
+<form>
+    <div id="dvParent">
+   <div id="dvjQuery" style= "height:70px;width:200px;background:Yellow"  >London bridge is falling down </div>
+    </div>
+    <br/><br/>
+    <input type='button' id='btnDetach' Value=' Detach Div ' />
+    <input type='button' id='btnAttach' Value=' Re-attach Div ' />
+    <input type = 'button' id = 'btnEmpty' Value = 'Empty'/>
+    <br/><br/>
+</form>
+
+</body>
+
+</html>

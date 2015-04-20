@@ -1,0 +1,14 @@
+body
+{
+    font-family: Arial;
+    font-size : 14pt;
+    padding: 10pt;
+    color : Green
+}
+
+.highlight
+{
+    font-size: 18pt;
+    font-weight:Bold;
+    color: Blue;
+}

@@ -1,0 +1,20 @@
+<Doctype html>
+<html> 
+  <head>
+  <link rel= "stylesheet" href= "RemoveDetachAttach.css">
+  <script> src = "RemoveDetachAttach.js" </script>
+  </head>
+ <body>
+<form>
+    <div id="dvParent">
+   <div id="dvjQuery"  style="height:70px;width:200px;background:Yellow">London bridge is falling down </div>
+    </div>
+    <br/><br/>
+    <input type='button' id='btnDetach' Value=' Detach Div ' />
+    <input type='button' id='btnAttach' Value=' Re-attach Div ' />
+    <input type = 'button' id = 'btnEmpty' Value = 'Empty'/>
+    <br/><br/>
+</form>
+</body>
+
+</html>
